@@ -35,7 +35,7 @@ jobs:
           aws-region: ap-south-1
 
       - name: Set up kubectl
-        run: aws eks update-kubeconfig --name django1-cluster --region ap-south-1
+        run: aws eks update-kubeconfig --name django2-cluster --region ap-south-1
 
       - name: Verify Kubernetes Cluster Connection
         run: kubectl get nodes
