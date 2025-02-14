@@ -48,4 +48,4 @@ jobs:
 
       - name: Deploy to EKS
         run: |
-          kubectl set image deployment/django-deployment djangoapp=${{ secrets.DOCKER_USERNAME }}/djangoapp:${{ github.sha }} -n default
+          kubectl set image deployment/django-deployment django=${{ secrets.DOCKER_USERNAME }}/djangoapp:${{ github.sha }} -n default
